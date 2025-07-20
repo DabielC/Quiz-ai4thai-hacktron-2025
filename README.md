@@ -32,7 +32,7 @@ User Request → Container แรก (Port 8000) → Container ที่สอ�
 ### 1. Build และ Start Service
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 ### 2. ทดสอบ API
