@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  first-container:
+    build:
+      context: ./first-container
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - second-container
+    networks:
+      - api-network
+    environment:
+      - SECOND_CONTAINER_URL=http://second-container:8001
+
+  second-container:
+    build:
+      context: ./second-container
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    networks:
+      - api-network
+
+networks:
+  api-network:
+    driver: bridge
