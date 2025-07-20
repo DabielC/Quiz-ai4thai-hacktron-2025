@@ -18,7 +18,7 @@
 User Request → Container แรก (Port 8000) → Container ที่สอง (Port 8001) → Response
 ```
 
-## คุณสมบัติเด่น
+## คุณสมบัติของระบบ
 
 - Container ทั้งสองจะบันทึก Log ของทุก Request พร้อมเวลา
 - Container แรกทำหน้าที่เป็น API Gateway
