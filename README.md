@@ -9,7 +9,7 @@
 - deploy ทุกอย่างบน docker-compose.yml
 - ส่งงานผ่าน github หรือ gitlab เปิด public access
 - เขียน Readme.md บอกวิธี deploy และทดสอบ
-<image src='image.png'></image>
+- <image src='image.png'></image>
 
 ## Flow การทำงาน
 
